@@ -1,0 +1,273 @@
+/*********** 공통 ************/
+@font-face {
+    font-family: 'SUIT';
+    src: url(../font/SUIT-Medium.otf) format(truetype);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SUIT'
+}
+#wrap{
+    width: 100%;
+}
+.inner{
+    margin: 0 auto;
+    width: 1200px;
+}
+a{
+    text-decoration: none;
+    color: #4c494b;
+}
+ul li{
+    list-style: none;
+}
+/*********** 공통 끝************/
+/***********header************/
+header{
+    height: 226px;
+}
+#login{
+    padding-top: 5px;
+    text-align: right;
+    height: 34px;
+    background-color: #ff933a54;
+}
+#login a{
+    padding: 9px 22px;
+    border-left: 1px solid #4c494b;
+    border-right: 1px solid #4c494b;
+}
+header h1{
+    padding: 26px 0;
+    text-align: center;
+}
+nav{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 3px 3px gray ;
+    height: 45px;
+    z-index: 999;
+}
+nav > ul{
+    width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+    height: 45px;
+    margin-top: 25px;
+    background-color: #fff;
+}
+nav > ul a{
+    color: #4c494b;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+nav > ul > li{
+    width: 20%;
+}
+.depth{
+    background-color: #fff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: none;
+    height: 290px;
+    position: relative; 
+    z-index: 999;   
+}
+.depth .inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.depth .inner ul{
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid gray ;
+    height: 288px;
+    z-index: 999;
+}
+.depth .inner ul li a{
+    font-size: 1.25rem;
+    color: #4c494b;
+    line-height: 2.5;
+}
+.depth .inner ul li a:hover{
+    display: block;
+    background-color: #7aa780;
+    color: #fff;
+    transition: 0.5s;
+}
+.depth .inner ul:first-child{
+    border-left: 1px solid gray;
+}
+/***********section1************/
+#section1{
+    height: 600px;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+#section1 #main1{
+    display: flex;
+   /*  border: 2px solid red; */
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+#section1 #main_banner{
+    width: 330px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 30px;
+    z-index: 1;
+    margin-right: 30px;
+
+}
+#section1 #main_banner img{
+    z-index: 1;
+    height: 500px;
+    border-radius: 30px;;
+   
+}
+#section1 #main_button{
+    height: 500px;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+#section1 #main_button #button1{
+    width: calc((100% - 225px) / 2);
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding-top: 150px;
+    padding-left: 15px;
+    position: relative;
+    left: -43px;
+}
+#section1 #main_button #button1:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s ease-in-out;
+    transition-timing-function: linear;
+}
+#section1 #main_button #button2{
+    width: calc((100% - 225px) / 2);
+    height: 100%;
+    position: relative;
+    left: -22px;
+}
+#section1 #main_button #button2 .button2_1{
+    height: 49%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+#section1 #main_button #button2 .button2_2{
+    height: 49%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    
+}
+#section1 #main_button #button2 .button2_1:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+#section1 #main_button #button2 .button2_2:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+#section1 #main_button #button3{
+    width: calc((100% - 225px) / 2);
+    height: 100%;
+}
+#section1 #main_button #button3 .button3_1{
+    height: 49%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+#section1 #main_button #button3 .button3_2{
+    height: 49%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#section1 #main_button #button3 .button3_1:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+#section1 #main_button #button3 .button3_2:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+#section1 #main_button #button3 .button3_3:hover{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+/***********section2************/
+#section2{
+    height: 120px;
+    padding: 30px 10px;
+}
+#section2 img{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+#section2 button{
+    width: 20px;
+    height: 20px;
+    background-color: #9fa0a0;
+}
+/***********footer************/
+footer{
+    height: 274px;
+    background-color: #efefef;
+    color: #4c494b;
+    text-align: center;
+    padding: 50px 0 ;
+    
+}
+footer #bottom1{
+    font-size: 0.9rem;
+}
+footer #bottom1 a{
+    margin: 0 55px;
+}
+footer #bottom2{
+    padding-top: 55px;
+    line-height: 2;
+}

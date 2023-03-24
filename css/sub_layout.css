@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol, li{
+    list-style-type: none;
+}
+#wrap{
+    width: 100%;
+}
+.inner{
+    width: 1200px ;
+    margin: 0 auto;
+}
+/****************header**************/
+header #login{
+    background-color: #ff933a54;
+    height: 35px;
+}
+header  #login .inner{
+    text-align: right;
+}
+header #login .inner a{
+    padding: 5px 22px;
+    display: inline-block;
+    border-left: 1px solid #4c494b;
+    border-right: 1px solid #4c494b;
+}
+header #logo{
+    text-align: center;
+    
+}
+header #logo img{
+    margin: 35px 0;
+    width: 400px;
+}
+/******************nav****************/
+nav{
+    background-color: #fff;
+    height: 50px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav ul li a{
+    color: #4c494b;
+    padding: 10px 0;
+    display: block;
+}
+/******************main****************/
+/*************location*************/
+main #location{
+    text-align: right;
+    margin: 50px 0 100px 0;
+}
+main #location a::after{
+    content: ">";
+    margin: 0 5px 0 8px;
+}
+main #location a:last-child::after{
+    content: "";
+}
+/******************aside****************/
+main aside{
+    width: 240px;
+    float: left;
+    margin-right: 40px;
+    padding-bottom: 50px;
+    background-color: #EEFFA8;
+}
+main aside h6{
+    padding-left: 6px;
+    padding-top: 48px;
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    margin: 0 20px;
+    color: #333333;
+    border-bottom: solid 1px #4c494b;
+}
+main aside ul li{
+    border-bottom: solid 1px #4c494b;
+    font-size: 1.2rem;
+    color: #2F3439;
+    margin: 0 20px;
+}
+main aside a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 15px;
+}
+main aside a:hover{
+    text-decoration: none;
+    border: solid 1px #409151;
+    background-color: #409151;
+    color: #fff;
+    
+}
+/******************section****************/
+main section{
+    width: calc(1200px - 240px - 40px);
+    float: right;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+/******************footer****************/
+footer{
+    clear: both;
+    background-color: #ddd;
+    text-align: center;
+    padding: 60px 0;
+    color: #2C3E55;
+}
+footer #foot_top{
+    font-size: 0.9rem;
+
+}
+footer a{
+    margin: 0 55px;
+}
+
+footer #foot_bot{
+    font-size: 0.9rem;
+    padding-top: 55px;
+    line-height: 2;
+}
