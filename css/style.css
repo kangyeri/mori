@@ -31,11 +31,11 @@ header{
 #login{
     padding-top: 5px;
     text-align: right;
-    height: 34px;
+    height: 32px;
     background-color: #ff933a54;
 }
 #login a{
-    padding: 9px 22px;
+    padding: 5px 22px;
     border-left: 1px solid #4c494b;
     border-right: 1px solid #4c494b;
 }
@@ -101,10 +101,19 @@ nav > ul > li{
 .depth .inner ul:first-child{
     border-left: 1px solid gray;
 }
+
+.depth #green a {
+    color: #3F854F;
+    font-weight: bold;
+}
+
+.depth .inner ul #green a:hover{
+    color: white;
+}
 /***********section1************/
 #section1{
     height: 600px;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/moribg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 0;
@@ -243,10 +252,14 @@ nav > ul > li{
     padding: 30px 10px;
 }
 #section2 img{
-    border: 1px solid black;
+    border: 1px solid rgb(197, 197, 197);
     margin: 0 auto;
+    filter: grayscale(1);
 }
 
+#section2 img:hover{
+    filter: grayscale(0);
+}
 #section2 button{
     width: 20px;
     height: 20px;

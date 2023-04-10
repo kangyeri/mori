@@ -24,45 +24,94 @@ ul, ol, li{
     margin: 0 auto;
 }
 /****************header**************/
-header #login{
-    background-color: #ff933a54;
-    height: 35px;
+header{
+    height: 226px;
 }
-header  #login .inner{
+#login{
+    padding-top: 5px;
     text-align: right;
+    height: 34px;
+    background-color: #ff933a54;
 }
-header #login .inner a{
+#login a{
     padding: 5px 22px;
-    display: inline-block;
     border-left: 1px solid #4c494b;
     border-right: 1px solid #4c494b;
+   
 }
-header #logo{
+header h1{
+    padding: 26px 0;
     text-align: center;
-    
 }
-header #logo img{
-    margin: 35px 0;
-    width: 400px;
-}
-/******************nav****************/
 nav{
     background-color: #fff;
-    height: 50px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-nav ul li{
-    float: left;
-    width: 20%;
     text-align: center;
+    box-shadow: 0 3px 3px gray ;
+    height: 45px;
+    z-index: 999;
 }
-nav ul li a{
+nav > ul{
+    width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+    height: 45px;
+    margin-top: 25px;
+    background-color: #fff;
+}
+nav > ul a{
     color: #4c494b;
-    padding: 10px 0;
-    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
+nav > ul > li{
+    width: 20%;
+}
+.depth{
+    background-color: #fff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: none;
+    height: 290px;
+    position: relative; 
+    z-index: 999;   
+}
+.depth .inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.depth .inner ul{
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid gray ;
+    height: 288px;
+    z-index: 999;
+}
+.depth .inner ul li a{
+    font-size: 1.25rem;
+    color: #4c494b;
+    line-height: 2.5;
+}
+.depth .inner ul li a:hover{
+    display: block;
+    background-color: #7aa780;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.depth .inner ul #green a:hover{
+    color: white;
+}
+.depth .inner ul:first-child{
+    border-left: 1px solid gray;
+}
+
+.depth #green a {
+    color: #3F854F;
+    font-weight: bold;
+}
+
+
 /******************main****************/
 /*************location*************/
 main #location{
