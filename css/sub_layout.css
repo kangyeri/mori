@@ -155,7 +155,7 @@ main aside a{
 }
 main aside a:hover{
     text-decoration: none;
-    border: solid 1px #409151;
+   
     background-color: #409151;
     color: #fff;
     
